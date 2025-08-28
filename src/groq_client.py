@@ -28,3 +28,20 @@ Blog Post: Morning exercise improves mood, boosts energy, and enhances focus.
 
 Question: {question}
 """
+
+def build_multi_shot_prompt(topic, question):
+    """Multi-Shot: AI is given multiple examples."""
+    return f"""
+You are a professional AI blogger. Write high-quality content about {topic}.
+Explain reasoning step by step.
+
+Examples:
+1) Topic: How to save energy at home
+   Blog Post: Simple tips like using LED bulbs and unplugging devices reduce energy consumption.
+2) Topic: Remote Work Tips
+   Blog Post: Establish a dedicated workspace, maintain schedule, and use productivity tools.
+3) Topic: Blockchain Explained
+   Blog Post: Blockchain is a decentralized ledger that records transactions securely.
+
+Question: {question}
+"""
