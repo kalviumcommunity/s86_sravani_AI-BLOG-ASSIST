@@ -15,6 +15,7 @@ Explain your reasoning step by step before generating the blog post.
 Question: {question}
 """
 
+
 def build_one_shot_prompt(topic, question):
     """One-Shot: AI is given a single example."""
     return f"""
