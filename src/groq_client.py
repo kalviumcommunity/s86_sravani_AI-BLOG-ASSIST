@@ -2,9 +2,9 @@
 from groq import Groq
 from src.config import GROQ_API_KEY, DEFAULT_MODEL, DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS, DEFAULT_TOP_P, DEFAULT_STOP_SEQUENCE
 
+
 # Initialize Groq client
 client = Groq(api_key=GROQ_API_KEY)
-
 
 def build_zero_shot_prompt(topic, question):
     """Zero-Shot: AI answers directly without examples."""
@@ -14,6 +14,7 @@ Explain your reasoning step by step before generating the blog post.
 
 Question: {question}
 """
+
 
 
 def build_one_shot_prompt(topic, question):
@@ -28,6 +29,7 @@ Blog Post: Morning exercise improves mood, boosts energy, and enhances focus.
 
 Question: {question}
 """
+
 
 def build_multi_shot_prompt(topic, question):
     """Multi-Shot: AI is given multiple examples."""
