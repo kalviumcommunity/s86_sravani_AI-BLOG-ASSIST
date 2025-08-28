@@ -16,7 +16,6 @@ Question: {question}
 """
 
 
-
 def build_one_shot_prompt(topic, question):
     """One-Shot: AI is given a single example."""
     return f"""
@@ -29,7 +28,6 @@ Blog Post: Morning exercise improves mood, boosts energy, and enhances focus.
 
 Question: {question}
 """
-
 
 def build_multi_shot_prompt(topic, question):
     """Multi-Shot: AI is given multiple examples."""
