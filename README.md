@@ -136,8 +136,6 @@ streamlit run app.py
 ai-blogging-assistant/
 │-- app.py
 │-- README.md
-│-- requirements.txt
-│-- concepts.md
 │-- src/
     │-- config.py
     │-- groq_client.py
